@@ -25,9 +25,6 @@ euclidean(100, 1000)
 # euclidean(54,888)
 
 
-dijkstra<-function(graph, init_code){
-  
-}
 
 
 
