@@ -1,11 +1,13 @@
 Package: awesomeakshathyaning
 Type: Package
-Title: Finding The Highest Common Factor Of Two numbers
+Title: Finding The Highest Common Factor Of Two Numbers
 Version: 1.0
 Date: 2022-09-07
 Author: Akshath
 Maintainer: Who to complain to <akshath.srin@gmail.com>
-Description: It aims to achieve an efficient method for computing the greatest common divisor (GCD) of two integers (numbers), the largest number that divides them both without a remainder.
+Description: It aims to achieve an efficient method for computing the greatest 
+    common divisor (GCD) of two integers (numbers), the largest number 
+    that divides them both without a remainder.
 License: GPL-3
 Encoding: UTF-8
 RoxygenNote: 7.2.1

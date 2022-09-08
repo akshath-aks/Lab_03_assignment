@@ -1,5 +1,7 @@
 #' @title Finding The Highest Common Factor Of Two Numbers
-#'
+#' @description It aims to achieve an efficient method for computing the greatest 
+#' common divisor (GCD) of two integers (numbers), the largest number 
+#' that divides them both without a remainder.
 #' @param x one of the number to compute HCF
 #' @param y another number to compute HCF
 #'
