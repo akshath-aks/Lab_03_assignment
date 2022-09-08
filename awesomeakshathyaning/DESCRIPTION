@@ -1,10 +1,10 @@
-Package: awesomeakshathyaning.pkg
+Package: awesomeakshathyaning
 Type: Package
-Title: What the package does (short line)
+Title: awesomeakshathyaning: Finding the Highest common factor of two numbers
 Version: 1.0
 Date: 2022-09-07
 Author: Who wrote it
 Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
+Description: It aims to achieve an efficient method for computing the greatest common divisor (GCD) of two integers (numbers), the largest number that divides them both without a remainder
 License: What license is it under?
 RoxygenNote: 7.2.1
