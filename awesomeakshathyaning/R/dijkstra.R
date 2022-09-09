@@ -1,71 +1,64 @@
-#adding djstra function
-#1.1.2 * dijkstra()
-#' @Title Finding the shortest paths between nodes in a graph
-#' @description The function is to find the shortest paths between nodes in a 
-#' graph
-#' @param graph The graph contains a data.frame with three variables that 
-#' contains the edges of the graph
-#' @param init_node init_node is a starting node,it should be a numeric scalar 
-#' that exist in the graph.
+#' Computes the shortest distance between nodes in graph
 #'
-#' @return the shortest paths between nodes in a graph
+#' @param graph Inputting the data frame
+#' @param init_node Imputing the node from which shortest distance must be 
+#' calculated
+#'
+#' @return shortest distance between nodes
 #' @export
 #'
 #' @examples
 dijkstra<-function(graph,init_node){
-  graph<-data.frame(v1,v2,w)
-  dist[v1]<-Inf
-  prev[v1]<-0
-  Q<-v1
-  dist[init_node]<-0
-  #while(length(Q)!=0)
   
+  if (length(colnames(graph))!=3 || !is.numeric(init_node) || !all(colnames(graph)==c("v1","v2","w")) || !is.data.frame(graph) || !any(unique(graph[['v1']]==init_node))) stop("Wrong input")
   
+  #create vector having unvisited nodes
   
-  #n<-1
-  #for(n in length(v2))
-  #{
-  # if(v2[n]=init_node)
-  # {
-  # dist(v1[n])=w[n]
-  #}
-  # else
-  #{
-  #n=n+1
-  #}
-  #prev[v1]<-min(w[n])
-  #}
-  #n<-1
-  #for(n in length(v2))
-  #{
-  #if(prev[v1]=v2[n]&prev[v1]!=init_node& prev[v1]+w[n]<dist(v1))
-  #{dist(v1[n])=prev[v1]+w[n]
-  #prev[v1]<-min(w[n])}
-  #else{
-  #n=n+1
-  #}
-  #return(prev[v1])
-  #}
-  #for(n in length(v2))
-  #{
-  #if(prev[v1]=v2[n]& prev[v1]+w[n]<dist(v1))
-  #{dist(v1[n])=prev[v1]+w[n]
-  #prev[v1]<-min(w[n])}
-  # else{
-  # n=n+1
-  ## }
-  #return(prev[v1])
-  #}
+  unvisited<-unique(graph[['v1']])
+  
+  #create data.frame with the shortest distances from the initial node (0)
+  
+  df<-data.frame(vertex=unvisited, shortest_dist=rep(Inf,length(unvisited)), flag=rep(0,length(unvisited)))
+  
+  df[df[['vertex']]==init_node,'shortest_dist']=0
+  
+  #continue while unvisited vector is not emgraphty (all vertices have been visited)
+  
+  while (length(unvisited)>0){
+    
+    #filter according to the flag and then find the vertex with the shortest distance from the initial node
+    
+    fl<-df[df[,'flag']==0,]
+    
+    m=fl[order(fl[,'shortest_dist']),'vertex'][1]
+    
+    #check nearest neighbors for that vertex
+    
+    nearest<-graph[graph[['v1']]==m,'v2']
+    
+    
+    for (i in nearest){
+      
+      if (graph[graph[,'v1']==m & graph[,'v2']==i,'w']+df[df[,'vertex']==m,'shortest_dist'] < df[df[,'vertex']==i,'shortest_dist']){
+        
+        df[df[,'vertex']==i,'shortest_dist']<-graph[graph[,'v1']==m & graph[,'v2']==i,'w']+df[df[,'vertex']==m,'shortest_dist']
+        
+      }else{
+        next
+      }
+      
+    }
+    
+    #flag that vertex as "1"  that implies visited vertex
+    
+    df[df[,'vertex']==m,'flag']<-1
+    
+    #remove that vertex from unvisited vector
+    
+    unvisited<-unvisited[-which(unvisited==m)]
+    
+  }
+  
+  return(df[,'shortest_dist'])
+  
 }
-
-
-
-
-wiki_graph <-
-  data.frame(v1=c(1,1,1,2,2,2,3,3,3,3,4,4,4,5,5,6,6,6),
-             v2=c(2,3,6,1,3,4,1,2,4,6,2,3,5,4,6,1,3,5),
-             w=c(7,9,14,7,10,15,9,10,11,2,15,11,6,6,9,14,2,9))
-
-
-
-
