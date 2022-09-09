@@ -15,5 +15,7 @@ euclidean(x, y)
 returns HCF of two numbers
 }
 \description{
-It aims to achieve an efficient method for computing the greatest common divisor (GCD) of two integers (numbers), the largest number that divides them both without a remainder.
+It aims to achieve an efficient method for computing the greatest 
+common divisor (GCD) of two integers (numbers), the largest number 
+that divides them both without a remainder.
 }
