@@ -1,5 +1,17 @@
 #adding djstra function
 #1.1.2 * dijkstra()
+#' @Title Finding the shortest paths between nodes in a graph
+#' @description The function is to find the shortest paths between nodes in a 
+#' graph
+#' @param graph The graph contains a data.frame with three variables that 
+#' contains the edges of the graph
+#' @param init_node init_node is a starting node,it should be a numeric scalar 
+#' that exist in the graph.
+#'
+#' @return the shortest paths between nodes in a graph
+#' @export
+#'
+#' @examples
 dijkstra<-function(graph,init_node){
   graph<-data.frame(v1,v2,w)
   dist[v1]<-Inf
