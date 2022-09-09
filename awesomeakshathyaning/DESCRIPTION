@@ -3,7 +3,7 @@ Type: Package
 Title: Finding The Highest Common Factor Of Two Numbers
 Version: 1.0
 Date: 2022-09-07
-Author: Akshath
+Author: Akshath, Yaning
 Maintainer: Who to complain to <akshath.srin@gmail.com>
 Description: It aims to achieve an efficient method for computing the greatest 
     common divisor (GCD) of two integers (numbers), the largest number 
