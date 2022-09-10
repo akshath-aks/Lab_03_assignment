@@ -8,6 +8,9 @@ Maintainer: Who to complain to <akshath.srin@gmail.com>
 Description: It aims to achieve an efficient method for computing the greatest 
     common divisor (GCD) of two integers (numbers), the largest number 
     that divides them both without a remainder.
-License: GPL-3
+License: GPL-3 + file LICENSE
 Encoding: UTF-8
 RoxygenNote: 7.2.1
+Depends: 
+    R (>= 2.10)
+LazyData: true
