@@ -13,8 +13,8 @@ A graph with 18 rows and 3 variables:
   \item{w}{the weight between two edges}
 }
 }
-\source{https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
-
+\source{
+\url{https://en.wikipedia.org/wiki/Dijkstra's_algorithm}
 }
 \usage{
 wiki_graph

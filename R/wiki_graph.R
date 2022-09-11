@@ -7,5 +7,5 @@
 #'   \item{v2}{the edges in the graph} 
 #'   \item{w}{the weight between two edges}
 #' }
-#' @source \url{https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm}
+#' @source \url{https://en.wikipedia.org/wiki/Dijkstra's_algorithm}
 "wiki_graph"
