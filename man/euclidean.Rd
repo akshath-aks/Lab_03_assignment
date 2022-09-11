@@ -2,14 +2,14 @@
 % Please edit documentation in R/Euclidean.R
 \name{euclidean}
 \alias{euclidean}
-\title{Finding The Highest Common Factor Of Two Numbers}
+\title{Finding The Greatest Common Divisor Of Two Numbers}
 \usage{
 euclidean(x, y)
 }
 \arguments{
-\item{x}{one of the number to compute HCF}
+\item{x}{one of the number to compute GCD}
 
-\item{y}{another number to compute HCF}
+\item{y}{another number to compute GCD}
 }
 \value{
 returns HCF of two numbers
