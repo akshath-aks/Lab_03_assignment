@@ -4,7 +4,7 @@
 #' that divides them both without a remainder.
 #' @param x one of the number to compute GCD
 #' @param y another number to compute GCD
-#'
+#' @references https://en.wikipedia.org/wiki/Euclidean_algorithm
 #' @return returns HCF of two numbers
 #' @export
 #'

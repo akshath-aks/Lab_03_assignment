@@ -18,3 +18,6 @@ shortest distance between nodes
 \description{
 Computes the shortest distance between nodes in graph
 }
+\references{
+https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+}

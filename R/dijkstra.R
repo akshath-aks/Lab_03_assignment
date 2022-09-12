@@ -3,10 +3,9 @@
 #' @param graph Inputting the data frame
 #' @param init_node Imputing the node from which shortest distance must be 
 #' calculated
-#'
 #' @return shortest distance between nodes
 #' @export
-#'
+#' @references https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
 #' @examples
 dijkstra<-function(graph,init_node){
   
