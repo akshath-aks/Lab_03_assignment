@@ -9,7 +9,7 @@ Description: It aims to achieve an efficient method for computing the greatest
     common divisor (GCD) of two integers (numbers), the largest number 
     that divides them both without a remainder and Computing Shortest Distance
     the nodes in the graph.
-License: GPL-3
+License: GPL (>= 3)
 Encoding: UTF-8
 RoxygenNote: 7.2.1
 Depends: 
