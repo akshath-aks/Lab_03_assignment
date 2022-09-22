@@ -7,7 +7,9 @@
 #' @references https://en.wikipedia.org/wiki/Euclidean_algorithm
 #' @return returns HCF of two numbers
 #' @export
-#'
+#' @examples  
+#' euclidean(123612, 13892347912)
+#' euclidean(100, 1000)
 
 euclidean<-function(x,y)
 {

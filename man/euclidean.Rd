@@ -19,6 +19,11 @@ It aims to achieve an efficient method for computing the greatest
 common divisor (GCD) of two integers (numbers), the largest number 
 that divides them both without a remainder.
 }
+\examples{
+ 
+euclidean(123612, 13892347912)
+euclidean(100, 1000)
+}
 \references{
 https://en.wikipedia.org/wiki/Euclidean_algorithm
 }
